@@ -9,7 +9,7 @@ export default function Index(){
     //Área declarativa
     <div className="bg-blue-500 shadow-lg w-[100%] ">
          
-      <Image className="inline-block" src={imgPrincipal} alt="Imagem Principal" />
+      <Image className="inline-block w-[100%]" src={imgPrincipal} alt="Imagem Principal" />
  
  
     </div>
