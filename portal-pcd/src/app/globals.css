@@ -1,1 +1,82 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme{
+  /* Criando meus BREAK-POINTS-PERSONALIZADOS */
+  --breakpoint-pequeno: 640px; /* Pequeno */
+  --breakpoint-medio: 768px; /* Médio */
+  --breakpoint-grande: 1024px; /* Grande */
+  --breakpoint-gigante: 1280px; /* Gigante */
+  --breakpoint-massivo: 1536px; /* Massivo */
+  --breakpoint-hero: 1920px; /* Hero */
+  --breakpoint-mega: 2560px; /* Mega */
+
+  /* Criando cores e backgrounds PERSONALIZADOS */
+  --color-minha-cor-de-fundo: #2f3f4f; /* Cor de fundo */
+  --color-minha-cor-de-texto: #fcdc3c; /* Cor de texto */
+  --color-minha-cor-de-destaque: #ff0000; /* Cor de destaque */
+  --color-minha-cor-de-borda: #cccccc; /* Cor de borda */
+  --color-minha-cor-de-sombra: rgba(0, 0, 0, 0.1); /* Cor de sombra */
+  --color-minha-cor-de-link: #0070f3; /* Cor de link */
+
+}
+
+
+@layer{
+  .meus-links{
+    @apply hover:bg-blue-500 pequeno:hover:bg-minha-cor-de-texto grande:hover:bg-minha-cor-de-destaque medio:hover:bg-minha-cor-de-borda p-2 inline-block m-2 rounded-[5px];
+  }
+  .dark{
+    @apply dark:bg-gray-900 dark:text-white bg-gray-200 text-gray-800 shadow-lg w-[100%] flex flex-col items-center justify-center p-5 rounded-lg border border-gray-300 dark:border-gray-700 transition duration-300 ease-in-out;
+    backdrop-filter: blur(10px) brightness(0.8);
+  }
+
+  .form-login{
+    input{
+      @apply invalid:border-pink-500 invalid:text-pink-600 focus:border-sky-500 focus:outline focus:outline-sky-500 focus:invalid:border-pink-500 focus:invalid:outline-pink-500 disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-500 disabled:shadow-none dark:disabled:border-gray-700 dark:disabled:bg-gray-800/20 block border-[1px] mx-auto w-[40vw] h-[8vh] rounded-[5px] p-2;   
+    }
+
+    button{
+      @apply  bg-pink-500 hover:border-[1px] hover:border-pink-600 hover:bg-white hover:text-pink-500 text-white focus:outline focus:outline-sky-500  disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-500 disabled:shadow-none dark:disabled:border-gray-700 dark:disabled:bg-gray-800/20 block border-[1px] mx-auto w-[40vw] h-[8vh] rounded-[5px] p-2 my-[2%] transition ease-in cursor-pointer;   
+    }
+
+    label{
+      @apply block mx-auto w-[40vw] my-2;
+    }
+
+
+  }
+
+
+
+}
+
+.meu-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.meu-conteudo {
+  flex: 1;
+  
+}
+
+.meu-cabecalho {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+.meu-rodape {
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+
+body {
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
