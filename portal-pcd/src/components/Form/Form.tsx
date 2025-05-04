@@ -86,10 +86,10 @@ export default function Form() {
           </div>
           <div>
             <button type="submit" id="submit">
-              Login
+              Entrar
             </button>
           </div>
-          <p className="text-center">Não possui registro. <a className="text-blue-500" href="/cadastro">Clique aqui...</a></p>
+          <p className="text-center">Não possui cadastro. <a className="text-blue-500" href="/cadastro">Clique Aqui</a></p>
         </fieldset>
       </form>
 
