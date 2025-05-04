@@ -11,25 +11,23 @@ export const viewport:Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "projeto-pcd",
-  description: "projeto acessibilidade para pessoas pcd",
-  authors: [{name:"Renato Bezerra | RM560928"},{name:"Felipe Carlos | RM559476"},{name:"Jhonatan Torres| RM560601"}],
-  applicationName: "Aula 17",
+  title: "portal-pcd",
+  description: "cp de front - portal-pcd",
+  authors: [{name:"Renato Bezerra | Felipe Carlos | Jhonatan Torres"}],
+  applicationName: "CP",
  
 };
 
 export default function RootLayout({children}: Readonly<{children: React.ReactNode;}>) {
-
   return (
     <html lang="pt-br">
-
       <body>
-        <Cabecalho  tituloPagina={"COMPONENTES"} mensagem={"ENVIADA"}  />
-        <div className=".meu-container min-h-[60vh] w-[100vw]" >
+        <Cabecalho tituloPagina="PORTAL PCD" mensagem="Bem vindos!"/>
+        <div className="container min-h-[78vh]">
           {children}
         </div>
         <Rodape />
       </body>
-    </html> 
+    </html>
   );
 }
