@@ -13,9 +13,9 @@
   --breakpoint-mega: 2560px; /* Mega */
 
   /* Criando cores e backgrounds PERSONALIZADOS */
-  --color-minha-cor-de-fundo: #f9f9f9; /* Cor de fundo */
-  --color-minha-cor-de-texto: #4b5563; /* Cor de texto */
-  --color-minha-cor-de-destaque: #374151; /* Cor de destaque */
+  --color-minha-cor-de-fundo: #2f3f4f; /* Cor de fundo */
+  --color-minha-cor-de-texto: #fcdc3c; /* Cor de texto */
+  --color-minha-cor-de-destaque: #ff0000; /* Cor de destaque */
   --color-minha-cor-de-borda: #cccccc; /* Cor de borda */
   --color-minha-cor-de-sombra: rgba(0, 0, 0, 0.1); /* Cor de sombra */
   --color-minha-cor-de-link: #0070f3; /* Cor de link */
@@ -103,7 +103,6 @@
   .dark .meu-cabecalho {
     @apply bg-gray-900 text-white border-gray-700;
   }
-
   
 }
 
