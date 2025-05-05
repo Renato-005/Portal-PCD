@@ -13,7 +13,7 @@
   --breakpoint-mega: 2560px; /* Mega */
 
   /* Criando cores e backgrounds PERSONALIZADOS */
-  --color-minha-cor-de-fundo: #2f3f4f; /* Cor de fundo */
+  --color-minha-cor-de-fundo: #f9f9f9; /* Cor de fundo */
   --color-minha-cor-de-texto: #fcdc3c; /* Cor de texto */
   --color-minha-cor-de-destaque: #ff0000; /* Cor de destaque */
   --color-minha-cor-de-borda: #cccccc; /* Cor de borda */
@@ -103,6 +103,8 @@
   .dark .meu-cabecalho {
     @apply bg-gray-900 text-white border-gray-700;
   }
+
+  
 }
 
 .meu-container {
