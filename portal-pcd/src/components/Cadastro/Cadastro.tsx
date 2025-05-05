@@ -42,12 +42,12 @@ export default function Cadastro() {
       }
 
   return (
-    <div>
+    <div className="min-h-screen flex items-center justify-center bg-gray-100">
         <form  onSubmit={handleSubmit} className="form-cadastro">
         <fieldset>
-          <legend>CADASTRO</legend>
+          <legend className="form-cadastro-legend">CADASTRO</legend>
           <div>
-            <label htmlFor="nome">Nome</label>
+            <label htmlFor="nome" className="form-cadastro-label">Nome</label>
             <input
               type="text"
               name="nome"
@@ -56,10 +56,11 @@ export default function Cadastro() {
               placeholder="Digite seu nome"
               value={usuario.nome}
               onChange={(e) => handleChange(e)}
+              className="form-cadastro-input"
             />
           </div>
           <div>
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email" className="form-cadastro-label">Email</label>
             <input
               type="email"
               name="email"
@@ -68,10 +69,11 @@ export default function Cadastro() {
               placeholder="Digite seu email"
               value={usuario.email}
               onChange={(e) => handleChange(e)}
+              className="form-cadastro-input"
             />
           </div>
           <div>
-            <label htmlFor="senha">Senha</label>
+            <label htmlFor="senha" className="form-cadastro-label">Senha</label>
             <input
               type="password"
               name="senha"
@@ -80,10 +82,11 @@ export default function Cadastro() {
               placeholder="Digite sua senha"
               value={usuario.senha}
               onChange={(e) => handleChange(e) }
+              className="form-cadastro-input"
             />
           </div>
           <div>
-            <button type="submit" id="submit">
+            <button type="submit" id="submit" className="form-cadastro-button">
               Cadastrar
             </button>
           </div>
