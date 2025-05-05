@@ -32,5 +32,3 @@ Agradecemos aos seguintes colaboradores que contribuíram para este projeto:
 - [Felipe Carlos Abreu](https://github.com/felipecarlos1)
 - [Renato da Silva Alexandre Bezerra](https://github.com/Renato-005)
 - [Jhonatan Quispe Torrez]( https://github.com/JhowQT)
-felipecarlos1 - Overview
-Programming student. Java / SQL / Python. felipecarlos1 has 8 repositories available. Follow their code on GitHub.
